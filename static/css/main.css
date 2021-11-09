@@ -24,12 +24,13 @@ body {
     font-size: 20px;
 }
 
-
 #inputData input {
     padding: 10px;
     width: 100%;
    
 }
+
+#input
 
 #dropdown-question {
     margin-bottom: 0;
@@ -72,6 +73,3 @@ body {
     padding: 10px;
     margin-top: 5%;
 }
-
-
-

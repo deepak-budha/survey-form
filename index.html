@@ -17,12 +17,24 @@
 
         <form action="" id="survey-form">
             <div id="inputData">
-                <label for="name" id="name-lable">Name</label><br>
-                <input type="text" name="name" id="name" placeholder="Enter your name"><br>
-                <label for="email" id="email-label" >Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Enter your email"><br>
-                <label for="number" id="number-lable">Age (optional)</label><br>
-                <input type="number" name="age" id="number" required placeholder=" Age"><br>
+                <div id="label1">
+                    <label for="name" id="name-label">Name</label><br>
+                </div>
+                <div id="input1">
+                    <input type="text" id="name" value="" required placeholder="Enter your name"><br>
+                </div>
+                <div id="label2">
+                    <label for="email" id="email-label" >Email</label><br>
+                </div>
+                <div id="input2">
+                    <input type="email" id="email" value="" required placeholder="Enter your email"><br>
+                </div>
+                <div id="label3">
+                    <label for="number" id="number-label">Age (optional)</label><br>
+                </div>
+                <div id="input3">
+                    <input type="number" id="number" value=""  min="1" max="150" required placeholder=" Age"><br>
+                </div>
             </div>
 
             <p id="dropdown-question">Which option best describes  your current role?</p>    
@@ -37,11 +49,11 @@
             
             <div class="radioButton">
                 <p>Would you recommend freeCodeCamp to a friend?</p>
-                <input type="radio" name="recommend">
+                <input type="radio" name="recommend" value="radio1">
                 <label for="">Definitely</label> <br>
-                <input type="radio" name="recommend">
+                <input type="radio" name="recommend" value="radio2">
                 <label for="">Maybe</label>  <br>
-                <input type="radio" name="recommend">
+                <input type="radio" name="recommend" value="radio3">
                 <label for="">Not Sure</label>   
             </div>
             
@@ -57,23 +69,23 @@
 
             <div class="checkBoxes">
                 <p>What would you like to see improved? <span>(Check all that apply)</span></p>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="Front-end">
                 <label for="">Front-end Projects</label> <br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="Back-end">
                 <label for="">Back-end Projects</label>  <br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="Data">
                 <label for="">Data Visualization</label> <br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="Challenge">
                 <label for="">Challenges</label> <br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="OpenSource">
                 <label for="">Open Source Community</label>  <br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="Gitter">
                 <label for="">Gitter help rooms</label><br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="Video">
                 <label for="">Videos</label> <br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="CityMeetups">
                 <label for="">City Meetups</label>  <br>
-                <input type="checkbox" name="">
+                <input type="checkbox" name="" value="Wiki">
                 <label for="">Wiki</label>
             </div>
 
@@ -81,7 +93,7 @@
            <textarea name="" id="textarea" cols="50" rows="5" placeholder="Enter your comment here"></textarea>
         
             <input type="submit" id="submit" value="Submit">
-
         </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
     </body>
 </html>
